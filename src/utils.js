@@ -14,7 +14,8 @@ const  getReqData = (req) => {
 }
 
 const getUrlParams = (reqURL) => {
-    const [_, url, personId] = reqURL.split('/')
+    let [_, url, personId] = reqURL.split('/')
+    if (personId === '') personId = undefined
     return { url, personId }
 }
 
