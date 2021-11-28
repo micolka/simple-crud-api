@@ -1,7 +1,8 @@
+require('dotenv').config()
 const http = require('http')
 const { handleResponses } = require('./src/crud')
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8888
 
 const head = {"Content-Type": "application/json"}
 
